@@ -14,6 +14,10 @@ app.get("/error", (req, res) => {
   throw new Error("Something broke!");
 });
 
+app.get("/error2", (req, res) => {
+  throw new Error("Something broke!");
+});
+
 app.get("/payments", (req, res) => {
   const STRIPE_API_KEY = "sk_live_fakestripeapikeyleaked12"
   res.status(200).send(STRIPE_API_KEY)
